@@ -1,5 +1,5 @@
 //
-// Prefix header for all source files of the 'MultiResultsController' target in the 'MultiResultsController' project
+// Prefix header for all source files of the 'FPMultiFetchedResultsControllerExample' target in the 'FPMultiFetchedResultsControllerExample' project
 //
 
 #import <Availability.h>

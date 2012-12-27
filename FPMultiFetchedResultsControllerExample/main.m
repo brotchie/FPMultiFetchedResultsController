@@ -1,8 +1,8 @@
 //
 //  main.m
-//  MultiResultsController
+//  FPMultiFetchedResultsControllerExample
 //
-//  Created by James Brotchie on 24/12/12.
+//  Created by James Brotchie on 28/12/12.
 //  Copyright (c) 2012 James Brotchie. All rights reserved.
 //
 
