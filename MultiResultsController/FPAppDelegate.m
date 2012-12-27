@@ -7,6 +7,8 @@
 //
 
 #import "FPAppDelegate.h"
+#import "DataModel.h"
+#import "ExampleTableViewController.h"
 
 @implementation FPAppDelegate
 
@@ -17,7 +19,16 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+    
+    [DataModel main].managedObjectContext = self.managedObjectContext;
+    [[DataModel main] taskWithName:@"Milk" complete:NO ordering:0];
+    [[DataModel main] taskWithName:@"Eggs" complete:NO ordering:1];
+    [[DataModel main] taskWithName:@"Newspaper" complete:YES ordering:2];
+    
+    ExampleTableViewController *tableViewController = [[ExampleTableViewController alloc] initWithStyle:UITableViewStylePlain];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:tableViewController];
+    [self.window setRootViewController:navController];
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

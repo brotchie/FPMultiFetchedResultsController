@@ -24,6 +24,10 @@
 		E56DBA351687FE3200A9D56B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E56DBA141687FE3100A9D56B /* CoreData.framework */; };
 		E56DBA3D1687FE3200A9D56B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E56DBA3B1687FE3200A9D56B /* InfoPlist.strings */; };
 		E56DBA401687FE3200A9D56B /* MultiResultsControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E56DBA3F1687FE3200A9D56B /* MultiResultsControllerTests.m */; };
+		E56DBA4B1687FE8500A9D56B /* FPMultiFetchedResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = E56DBA4A1687FE8500A9D56B /* FPMultiFetchedResultsController.m */; };
+		E56DBA4E16881A8700A9D56B /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = E56DBA4D16881A8700A9D56B /* Task.m */; };
+		E56DBA5116881A9C00A9D56B /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E56DBA5016881A9C00A9D56B /* DataModel.m */; };
+		E5F0C057168BFDF6007EB690 /* ExampleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5F0C056168BFDF6007EB690 /* ExampleTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,14 @@
 		E56DBA3C1687FE3200A9D56B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E56DBA3E1687FE3200A9D56B /* MultiResultsControllerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultiResultsControllerTests.h; sourceTree = "<group>"; };
 		E56DBA3F1687FE3200A9D56B /* MultiResultsControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultiResultsControllerTests.m; sourceTree = "<group>"; };
+		E56DBA491687FE8500A9D56B /* FPMultiFetchedResultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPMultiFetchedResultsController.h; sourceTree = "<group>"; };
+		E56DBA4A1687FE8500A9D56B /* FPMultiFetchedResultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPMultiFetchedResultsController.m; sourceTree = "<group>"; };
+		E56DBA4C16881A8700A9D56B /* Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
+		E56DBA4D16881A8700A9D56B /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
+		E56DBA4F16881A9C00A9D56B /* DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModel.h; sourceTree = "<group>"; };
+		E56DBA5016881A9C00A9D56B /* DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModel.m; sourceTree = "<group>"; };
+		E5F0C055168BFDF6007EB690 /* ExampleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleTableViewController.h; sourceTree = "<group>"; };
+		E5F0C056168BFDF6007EB690 /* ExampleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +132,10 @@
 		E56DBA161687FE3100A9D56B /* MultiResultsController */ = {
 			isa = PBXGroup;
 			children = (
+				E56DBA491687FE8500A9D56B /* FPMultiFetchedResultsController.h */,
+				E56DBA4A1687FE8500A9D56B /* FPMultiFetchedResultsController.m */,
+				E5F0C052168BFD09007EB690 /* Model */,
+				E5F0C054168BFD13007EB690 /* Controller */,
 				E56DBA1F1687FE3100A9D56B /* FPAppDelegate.h */,
 				E56DBA201687FE3100A9D56B /* FPAppDelegate.m */,
 				E56DBA281687FE3100A9D56B /* MultiResultsController.xcdatamodeld */,
@@ -159,6 +175,26 @@
 				E56DBA3B1687FE3200A9D56B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E5F0C052168BFD09007EB690 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E56DBA4C16881A8700A9D56B /* Task.h */,
+				E56DBA4D16881A8700A9D56B /* Task.m */,
+				E56DBA4F16881A9C00A9D56B /* DataModel.h */,
+				E56DBA5016881A9C00A9D56B /* DataModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E5F0C054168BFD13007EB690 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E5F0C055168BFDF6007EB690 /* ExampleTableViewController.h */,
+				E5F0C056168BFDF6007EB690 /* ExampleTableViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +310,10 @@
 				E56DBA1D1687FE3100A9D56B /* main.m in Sources */,
 				E56DBA211687FE3100A9D56B /* FPAppDelegate.m in Sources */,
 				E56DBA2A1687FE3100A9D56B /* MultiResultsController.xcdatamodeld in Sources */,
+				E56DBA4B1687FE8500A9D56B /* FPMultiFetchedResultsController.m in Sources */,
+				E56DBA4E16881A8700A9D56B /* Task.m in Sources */,
+				E56DBA5116881A9C00A9D56B /* DataModel.m in Sources */,
+				E5F0C057168BFDF6007EB690 /* ExampleTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +480,7 @@
 				E56DBA451687FE3200A9D56B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E56DBA461687FE3200A9D56B /* Build configuration list for PBXNativeTarget "MultiResultsControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -448,6 +489,7 @@
 				E56DBA481687FE3200A9D56B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
