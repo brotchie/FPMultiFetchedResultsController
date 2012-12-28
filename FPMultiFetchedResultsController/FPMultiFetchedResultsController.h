@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
 
 /** FPMultiFetchedResultsController is a NSFetchedResultsController that 
  *  supports multiple NSFetchRequest and correctly handles section and 
