@@ -4,8 +4,11 @@
 
 A FPMultiFetchedResultsController extends the NSFetchedResultsController interface. On inititialization a FPMultiFetchedResultsController accepts a dictionary of NSFetchRequest objects. Each NSFetchRequest is uniquely named by its key in this dictionary.
 ## Example
-Initialise the `FPMultiFetchedResultsController` with a dictionary of NSString => NSFetchRequest pairs. Here we have a `Task` `NSManagedObject` with three fields: `name`, `complete`, and `ordering`.
+Consider a `Task` `NSManagedObject` with three fields: `name`, `complete`, and `ordering`.
 
+![TaskModel](https://raw.github.com/brotchie/FPMultiFetchedResultsController/master/img/task.png)
+
+We will initialise a `FPMultiFetchedResultsController` with a dictionary of NSString => NSFetchRequest pairs containing distinct fetch requests for all, complete, and incomplete tasks.
 ```objc
 // Task objects have an ordering field that specifies the user's custom ordering.
 NSSortDescriptor *sortByOrdering = [NSSortDescriptor sortDescriptorWithKey:@"ordering" ascending:YES];
