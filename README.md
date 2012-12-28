@@ -170,4 +170,4 @@ From the root of your project clone the `FPMultiFetchedResultsController` repost
     git submodule add https://github.com/brotchie/FPMultiFetchedResultsController.git Submodules/FPMultiFetchedResultsController
     git submodule update --init
     
-then drag `FPMultiFetchedResultsController.h` and `FPMultiFetchedResultsController.m` from the `FPMultiFetchedResultsController` subdirectory into your XCode project.
+then drag `FPMultiFetchedResultsController.h` and `FPMultiFetchedResultsController.m` from the `Submodules/FPMultiFetchedResultsController/FPMultiFetchedResultsController` subdirectory into your XCode project.
