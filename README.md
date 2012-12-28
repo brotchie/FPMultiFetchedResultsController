@@ -37,7 +37,7 @@ _resultsController = [[FPMultiFetchedResultsController alloc] initWithFetchReque
 _resultsController.delegate = self;
 ```
 
-After implementing the delegate methods details below you can then animation transitions between different fetch requests.
+After implementing the delegate methods detailed below you can animation transitions between fetch requests.
 
 ```objc
 // Show all tasks.
@@ -47,7 +47,7 @@ After implementing the delegate methods details below you can then animation tra
 [_resultController transitionToFetchRequestByName:@"complete" error:nil];
 ```
 
-During the transition the `controllerWillChangeContent:`, `controller:didChangeSection:`, `controller:didChangeObject:`, and `controllerDidChangeContent:` [NSFetchedResultsControllerDelegate](http://developer.apple.com/library/ios/#documentation/CoreData/Reference/NSFetchedResultsControllerDelegate_Protocol/Reference/Reference.html) delegate methods will be called.
+During the transition the `controllerWillChangeContent:`, `controller:didChangeSection:`, `controller:didChangeObject:`, and `controllerDidChangeContent:` [NSFetchedResultsControllerDelegate](http://developer.apple.com/library/ios/#documentation/CoreData/Reference/NSFetchedResultsControllerDelegate_Protocol/Reference/Reference.html) delegate methods are called.
 
 ### NSTableViewDataSource Delegate
 In your [UITableViewController](http://developer.apple.com/library/ios/#documentation/uikit/reference/UITableViewController_Class/Reference/Reference.html) subclass implement the [NSTableViewDataSource](https://developer.apple.com/library/mac/#documentation/Cocoa/Reference/ApplicationKit/Protocols/NSTableDataSource_Protocol/Reference/Reference.html) interface
